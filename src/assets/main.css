@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  input[type='checkbox']:checked ~ div {
+    @apply flex transition-transform duration-500 ease-in-out;
+  }
+
+  input[type='checkbox']:checked ~ :after {
+    @apply rotate-45;
+  }
+}
